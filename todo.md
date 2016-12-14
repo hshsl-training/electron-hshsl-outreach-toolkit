@@ -1,4 +1,4 @@
 - figure out opening external links in the user's default browser
   - see https://github.com/electron/electron/issues/1344
   - and this http://stackoverflow.com/questions/12627443/jquery-click-vs-onclick#12627478
-- 
+- js image upload: http://stackoverflow.com/questions/22087076/how-to-make-a-simple-image-upload-using-javascript-html#22369599
