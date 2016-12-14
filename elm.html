@@ -8,7 +8,8 @@
     {% include head.html %}
 
     <div id="elm">
-      <div class="vh100 col col-3 p2 bg-silver">
+
+      <div class="vh100 fixed col-3 p2 bg-silver top-0 bottom-0 left-0 border-box">
         <div class="px2">
           <a href="index.html" class="black text-decoration-none">Back</a>
           <h1 class="h3">Elm Preview Mode</h1>
@@ -19,26 +20,101 @@
             <label for="shortDesc">Short Description</label>
             <input v-model="shortDesc" name="shortDesc" class="block col-12 mb1 field" type="text">
             <label for="longDesc">Long Description</label>
-            <textarea v-model="longDesc" ea name="longDesc" class="block col-12 mb1 field" rows="5" cols="80"></textarea>
+            <textarea v-model="longDesc" ea name="longDesc" class="block col-12 mb1 field" rows="3" cols="80"></textarea>
             <label for="date">Date</label>
             <input v-model="date" name="date" class="block col-12 mb1 field" type="text">
             <label for="time">Time</label>
             <input v-model="time" name="time" class="block col-12 mb1 field" type="text">
             <label for="location">Location</label>
             <input v-model="location" name="location" class="block col-12 mb1 field" type="text">
+            <label for="image">Select an Image</label>
+            <input type="file" name="image" onchange="previewFile()">
           </form>
         </div>
       </div>
-      <div class="vh100 col col-9 p3">
-        <div>
-          <p>{{ "{{ title "}} }}</p>
-          <p>{{ "{{ shortDesc "}} }}</p>
-          <p>{{ "{{ longDesc "}} }}</p>
-          <p>{{ "{{ date "}} }}</p>
-          <p>{{ "{{ time "}} }}</p>
-          <p>{{ "{{ location "}} }}</p>
-        </div>
+
+      <div class="col-9 p3 ml-col-3 border-box bg-light-gray">
+
+        <section class="vh100 border-box border-bottom">
+          <h1 class="mb3 h4 center">Elm Landing Page</h1>
+          <div class="container">
+            <div class="flex justify-content-center">
+              <div class="col-4 px2">
+                <div class="bg-white rounded">
+                  <div>
+                    <img src="http://placehold.it/600x400" class="rounded-top img-insert">
+                  </div>
+                  <div class="p2">
+                    <p class="h3">{{ "{{ title "}} }}</p>
+                    <p>{{ "{{ shortDesc "}} }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="vh100 border-box border-bottom pb3">
+          <h1 class="mb3 h4 center">Elm Blog</h1>
+          <div class="container">
+            <div class="p3">
+              <div class="bg-white rounded">
+                <div>
+                  <img src="http://placehold.it/1200x900" class="rounded-top img-insert">
+                </div>
+                <div class="p2">
+                  <p class="h3">{{ "{{ title "}} }}</p>
+                  <p>{{ "{{ longDesc "}} }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="vh100 border-box border-bottom pb3">
+          <h1 class="mb3 h4 center">Elm Email</h1>
+          <div class="container">
+            <div class="p3">
+              <p class="h3 p1 white bg-silver-blue caps">Health Sciences &amp; Human Services Library</p>
+              <div class="flex">
+                <div class="col-6 mr2">
+                  <p class="h2">{{ "{{ title "}} }}</p>
+                  <p class="bold mb0">{{ "{{ date "}} }}</p>
+                  <p class="bold mb0">{{ "{{ time "}} }}</p>
+                  <p class="bold">{{ "{{ location "}} }}</p>
+                  <p>{{ "{{ shortDesc "}} }}</p>
+                </div>
+                <div class="col-6 mt2 mr2">
+                  <img src="http://placehold.it/600x400" alt="" class="img-insert">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="vh100 border-box">
+          <h1 class="mb3 h4 center">Elm Calendar</h1>
+          <div class="container">
+            <div class="p3">
+              <p class="h3 green caps">Health Sciences &amp; Human Services Library</p>
+              <p class="h2 border-bottom">{{ "{{ title "}} }}</p>
+              <p class="bold mb0">{{ "{{ date "}} }}</p>
+              <p class="bold mb0">{{ "{{ time "}} }}</p>
+              <p class="bold mb0">{{ "{{ location "}} }}</p>
+              <div class="flex">
+                <div class="col-4 mt2 mr2">
+                  <img src="http://placehold.it/600x400" alt="" class="img-insert">
+                </div>
+                <div class="col-8 p2">
+                  <p>{{ "{{ longDesc "}} }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
+
     </div>
 
     {% include elm-scripts.html %}

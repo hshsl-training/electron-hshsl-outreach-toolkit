@@ -3,7 +3,30 @@
   var elm = new Vue({
     el: '#elm',
     data: {
-      title: ' '
+      title: 'HS/HSL Hosts BD2K Webinar on Data Science',
+      shortDesc: 'Researchers of all levels are invited to attend this Big Data to Knowledge (BD2K) webinar at the Health Sciences & Human Services Library.',
+      longDesc: 'This week\'s NIH Big Data to Knowledge (BD2K) lecture is "Finding and Accessing Datasets, Indexing, and Identifiers", with Lucila Ohno-Machado, UCSD.\
+      Network with researchers and librarians at HS/HSL as we live stream the latest event in the NIH\'s Guide to the Fundamentals of Data Science lecture series.\
+      The lectures cover the basics of data management, representation, computation, statistical inference, data modeling, and other topics relevant to "big data" biomedicine.\
+      The series provides essential training suitable for individuals at all levels of the biomedical community.',
+      date: 'Friday, September 23',
+      time: 'Noon to 1pm',
+      location: 'Health Sciences & Human Services Library, Distance Ed Room',
+      url: ''
     }
   })
+
+  function previewFile() {
+    var preview = document.querySelector('img');
+    var file    = document.querySelector('input[type=file]').files[0];
+    var reader  = new FileReader();
+
+    reader.addEventListener("load", function () {
+      preview.src = reader.result;
+    }, false);
+
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  }
 </script>
