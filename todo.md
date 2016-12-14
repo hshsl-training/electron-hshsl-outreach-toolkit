@@ -1,0 +1,4 @@
+- figure out opening external links in the user's default browser
+  - see https://github.com/electron/electron/issues/1344
+  - and this http://stackoverflow.com/questions/12627443/jquery-click-vs-onclick#12627478
+- 

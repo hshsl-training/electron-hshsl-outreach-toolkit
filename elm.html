@@ -1,0 +1,48 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <body>
+
+    {% include head.html %}
+
+    <div id="elm">
+      <div class="vh100 col col-3 p2 bg-silver">
+        <div class="px2">
+          <a href="index.html" class="black text-decoration-none">Back</a>
+          <h1 class="h3">Elm Preview Mode</h1>
+          <p>Enter your outreach content below to preview on the right what it will look like throughout the Elm.</p>
+          <form action="">
+            <label for="title">Title</label>
+            <input v-model="title" name="title" class="block col-12 mb1 field" type="text">
+            <label for="shortDesc">Short Description</label>
+            <input v-model="shortDesc" name="shortDesc" class="block col-12 mb1 field" type="text">
+            <label for="longDesc">Long Description</label>
+            <textarea v-model="longDesc" ea name="longDesc" class="block col-12 mb1 field" rows="5" cols="80"></textarea>
+            <label for="date">Date</label>
+            <input v-model="date" name="date" class="block col-12 mb1 field" type="text">
+            <label for="time">Time</label>
+            <input v-model="time" name="time" class="block col-12 mb1 field" type="text">
+            <label for="location">Location</label>
+            <input v-model="location" name="location" class="block col-12 mb1 field" type="text">
+          </form>
+        </div>
+      </div>
+      <div class="vh100 col col-9 p3">
+        <div>
+          <p>{{ "{{ title "}} }}</p>
+          <p>{{ "{{ shortDesc "}} }}</p>
+          <p>{{ "{{ longDesc "}} }}</p>
+          <p>{{ "{{ date "}} }}</p>
+          <p>{{ "{{ time "}} }}</p>
+          <p>{{ "{{ location "}} }}</p>
+        </div>
+      </div>
+    </div>
+
+    {% include elm-scripts.html %}
+
+  </body>
+
+</html>
