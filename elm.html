@@ -22,13 +22,17 @@
             <label for="longDesc">Long Description</label>
             <textarea v-model="longDesc" ea name="longDesc" class="block col-12 mb1 field" rows="3" cols="80"></textarea>
             <label for="date">Date</label>
-            <input v-model="date" name="date" class="block col-12 mb1 field" type="text">
+            <input v-model="date" name="date" class="block col-12 mb1 field" type="date">
             <label for="time">Time</label>
-            <input v-model="time" name="time" class="block col-12 mb1 field" type="text">
+            <input v-model="time" name="time" class="block col-12 mb1 field" type="time">
             <label for="location">Location</label>
             <input v-model="location" name="location" class="block col-12 mb1 field" type="text">
+            <label for="url">URL</label>
+            <input v-model="url" name="url" class="block col-12 mb1 field" type="url">
             <label for="image">Select an Image</label>
-            <input type="file" name="image" onchange="previewFile()">
+            <div class="border py1 pl-third bg-white overflow-scroll">
+              <input class="italic quoted" type="file" accept="image/*" name="image" onchange="previewFile()">
+            </div>
           </form>
         </div>
       </div>

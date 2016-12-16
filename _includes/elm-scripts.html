@@ -9,24 +9,46 @@
       Network with researchers and librarians at HS/HSL as we live stream the latest event in the NIH\'s Guide to the Fundamentals of Data Science lecture series.\
       The lectures cover the basics of data management, representation, computation, statistical inference, data modeling, and other topics relevant to "big data" biomedicine.\
       The series provides essential training suitable for individuals at all levels of the biomedical community.',
-      date: 'Friday, September 23',
+      date: 'Friday September 23',
       time: 'Noon to 1pm',
       location: 'Health Sciences & Human Services Library, Distance Ed Room',
       url: ''
     }
   })
 
+  // image preview solution via http://stackoverflow.com/a/41175754/2145103
   function previewFile() {
-    var preview = document.querySelector('img');
+    var preview = document.querySelectorAll('img');
     var file    = document.querySelector('input[type=file]').files[0];
     var reader  = new FileReader();
 
     reader.addEventListener("load", function () {
-      preview.src = reader.result;
+      for (var img in preview) {
+        preview[img].src = reader.result;
+      }
     }, false);
 
     if (file) {
       reader.readAsDataURL(file);
     }
   }
+</script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script>
+  /* datepicker js, css, and code via
+    - https://jqueryui.com/datepicker/
+    - http://stackoverflow.com/a/7844578/2145103
+    - http://api.jqueryui.com/datepicker/#option-dateFormat
+  */
+  $(function(){
+    $("input[type=date]" ).datepicker({
+      dateFormat: 'DD, MM dd'
+    });
+  });
+
+  // timepicker js, css, and code via http://jonthornton.github.io/jquery-timepicker/
+  $('input[type=time]').timepicker({'scrollDefault': 'now'});
 </script>
