@@ -8,3 +8,6 @@
     - https://forum.vuejs.org/t/making-jquery-ui-datepicker-works-with-vuejs/2752/10
 
 - http://wangzuo.github.io/input-moment/
+
+- fixed sidebar to vertically scroll like Basscss v7 docs
+- 
