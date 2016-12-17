@@ -21,10 +21,15 @@
             <input v-model="shortDesc" name="shortDesc" class="block col-12 mb1 field" type="text">
             <label for="longDesc">Long Description</label>
             <textarea v-model="longDesc" ea name="longDesc" class="block col-12 mb1 field" rows="3" cols="80"></textarea>
+            <!-- NOTE date and time inputs below set as type="text" hack to get around Chrome's
+                  native date and time picker behaviors.
+                  See for example http://stackoverflow.com/questions/5966244/jquery-datepicker-chrome
+                  for the headache of dealing with this issue.
+             -->
             <label for="date">Date</label>
-            <input v-model="date" name="date" class="block col-12 mb1 field" type="date">
+            <input v-model="date" name="date" class="block col-12 mb1 field" type="text">
             <label for="time">Time</label>
-            <input v-model="time" name="time" class="block col-12 mb1 field" type="time">
+            <input v-model="time" name="time" class="block col-12 mb1 field" type="text">
             <label for="location">Location</label>
             <input v-model="location" name="location" class="block col-12 mb1 field" type="text">
             <label for="url">URL</label>

@@ -6,3 +6,5 @@
   - related to:
     - https://github.com/vuejs/vue/issues/812#issuecomment-97852184
     - https://forum.vuejs.org/t/making-jquery-ui-datepicker-works-with-vuejs/2752/10
+
+- http://wangzuo.github.io/input-moment/

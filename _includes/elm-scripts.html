@@ -1,3 +1,9 @@
+<!-- 1/2 jQuery/Electron/Node hack via http://stackoverflow.com/a/37480521/2145103 -->
+<!-- Insert this line above script imports  -->
+<script>
+  if (typeof module === 'object') {window.module = module; module = undefined;}
+</script>
+
 <script src="js/vue.js"></script>
 <script>
   var elm = new Vue({
@@ -34,8 +40,8 @@
   }
 </script>
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui@1.12.1.js"></script>
 <script src="js/jquery.timepicker.min.js"></script>
 <script>
   /* datepicker js, css, and code via
@@ -44,11 +50,17 @@
     - http://api.jqueryui.com/datepicker/#option-dateFormat
   */
   $(function(){
-    $("input[type=date]" ).datepicker({
+    $("input[name=date]" ).datepicker({
       dateFormat: 'DD, MM dd'
     });
   });
 
   // timepicker js, css, and code via http://jonthornton.github.io/jquery-timepicker/
-  $('input[type=time]').timepicker({'scrollDefault': 'now'});
+  $('input[name=time]').timepicker({'scrollDefault': 'now'});
+</script>
+
+<!-- 2/2 jQuery/Electron/Node hack via http://stackoverflow.com/a/37480521/2145103 -->
+<!-- Insert this line after script imports -->
+<script>
+  if (window.module) module = window.module;
 </script>
