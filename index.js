@@ -8,7 +8,9 @@ let win
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow()
+  win = new BrowserWindow({
+    icon: __dirname + '/images/hshsl.png',
+  })
 
   // open app in full size, http://electron.atom.io/docs/api/browser-window/#winmaximize
   win.maximize()
