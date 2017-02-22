@@ -4,6 +4,19 @@
     <!-- /elm -->
     <style>
       @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+      body, .h0, h1, h2, h3, h4, h5, h6 {
+        font-family: -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+      }
       body,
       .vh100 { min-height: 100vh; }
       .raleway { font-family: "Raleway", sans-serif; }
@@ -14,6 +27,9 @@
       .align-content-center { align-content: center; }
       .bg-silver-blue { background-color: rgb(86,134,162); }
       .pb3 { padding-bottom: 2rem; }
+      .pr2 { padding-right: 1rem; }
+      .pl1 { padding-left: .5rem; }
+      .pl2 { padding-left: 1rem; }
       .py1 {
         padding-top: .5rem;
         padding-bottom: .5rem;
@@ -23,31 +39,51 @@
         padding-bottom: 1rem;
       }
       .pl-third { padding-left: .3rem; }
+      .mt6 { margin-top: 6rem; }
       .lh1 { line-height: 1; }
+      .lh1p25 { line-height: 1.25; }
       .purpleBrown { color: var(--purpleBrown); }
       .bg-purpleBrown { background-color: var(--purpleBrown); }
       .grey { color: var(--grey); }
-      .darken-1-hover:hover { background-color: var(--darken-1); }
-      .darken-2-hover:hover { background-color: var(--darken-2); }
-      .darken-3-hover:hover { background-color: var(--darken-3); }
-      .darken-4-hover:hover { background-color: var(--darken-4); }
+      .bg-darken-1-hover:hover { background-color: var(--darken-1); }
+      .bg-darken-2-hover:hover { background-color: var(--darken-2); }
+      .bg-darken-3-hover:hover { background-color: var(--darken-3); }
+      .bg-darken-4-hover:hover { background-color: var(--darken-4); }
+      .bg-yellow-hover:hover { background-color: var(--yellow-haze); }
+      .bg-lighten-1-hover:hover { background-color: var(--lighten-1); }
+      .bg-lighten-2-hover:hover { background-color: var(--lighten-2); }
+      .bg-lighten-3-hover:hover { background-color: var(--lighten-3); }
+      .bg-lighten-4-hover:hover { background-color: var(--lighten-4); }
       .yellow { color: var(--yellow); }
       .bg-yellow { background-color: var(--yellow); }
       .umm { color: var(--umm); }
+      .purpleBrown-light { color: var(--purpleBrown-light); }
+
+      .fw200 { font-weight: 200; }
 
       :root {
         --grey: rgb(172,164,171);
         --umm: #6698C8;
         --purpleBrown: #4D394B;
+        --purpleBrown-light: hsla(306,15%,26%,.4);
         --darken-1: rgba(0,0,0,.0625);
         --darken-2: rgba(0,0,0,.125);
         --darken-3: rgba(0,0,0,.25);
         --darken-4: rgba(0,0,0,.5);
+        --lighten-1: hsla(0,0%,100%,.0625);
+        --lighten-2: hsla(0,0%,100%,.125);
+        --lighten-3: hsla(0,0%,100%,.25);
+        --lighten-4: hsla(0,0%,100%,.5);
         --yellow: rgb(255,204,0);
+      }
+
+      .pill-right {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
       }
 
       .selected-menu-item {
         background-color: var(--yellow);
-        color: white;
+        color: var(--purpleBrown);
       }
     </style>
