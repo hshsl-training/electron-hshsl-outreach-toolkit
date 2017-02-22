@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-  <body>
+  {% include head.html %}
 
-    {% include head.html %}
+  <body>
 
     <div>
       <section class="vh100 col col-2 p2 bg-purpleBrown">
-        {% include nav-root.html %}
+        {% include home-nav.html %}
       </section>
       <div class="vh100 col col-10 p3">
         <div id="app">{{ "{{ message "}} }}</div>

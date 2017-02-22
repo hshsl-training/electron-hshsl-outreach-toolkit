@@ -1,6 +1,6 @@
 <!-- elm.html specific css -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="/css/jquery.timepicker.css">
     <!-- /elm -->
     <style>
       @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
@@ -22,11 +22,12 @@
       .raleway { font-family: "Raleway", sans-serif; }
       .text-decoration-none:hover { text-decoration: none; }
       .ml-col-3 { margin-left: 25%; }
-      .bg-light-gray { background-color: rgb(237,237,237); }
+      .bg-light-grey { background-color: rgb(237,237,237); }
       .justify-content-center { justify-content: center; }
       .align-content-center { align-content: center; }
       .bg-silver-blue { background-color: rgb(86,134,162); }
       .pb3 { padding-bottom: 2rem; }
+      .pbp75 { padding-bottom: .75rem; }
       .pr2 { padding-right: 1rem; }
       .pl1 { padding-left: .5rem; }
       .pl2 { padding-left: 1rem; }
@@ -43,13 +44,19 @@
       .lh1 { line-height: 1; }
       .lh1p25 { line-height: 1.25; }
       .purpleBrown { color: var(--purpleBrown); }
+      .purpleBrown-dark { color: var(--purpleBrown-dark); }
+      .purpleBrown-light { color: var(--purpleBrown-light); }
       .bg-purpleBrown { background-color: var(--purpleBrown); }
+      .bg-purpleBrown-dark { background-color: var(--purpleBrown-dark); }
       .grey { color: var(--grey); }
       .bg-darken-1-hover:hover { background-color: var(--darken-1); }
       .bg-darken-2-hover:hover { background-color: var(--darken-2); }
       .bg-darken-3-hover:hover { background-color: var(--darken-3); }
       .bg-darken-4-hover:hover { background-color: var(--darken-4); }
-      .bg-yellow-hover:hover { background-color: var(--yellow-haze); }
+      .bg-lighten-1 { background-color: var(--lighten-1); }
+      .bg-lighten-2 { background-color: var(--lighten-2); }
+      .bg-lighten-3 { background-color: var(--lighten-3); }
+      .bg-lighten-4 { background-color: var(--lighten-4); }
       .bg-lighten-1-hover:hover { background-color: var(--lighten-1); }
       .bg-lighten-2-hover:hover { background-color: var(--lighten-2); }
       .bg-lighten-3-hover:hover { background-color: var(--lighten-3); }
@@ -57,7 +64,6 @@
       .yellow { color: var(--yellow); }
       .bg-yellow { background-color: var(--yellow); }
       .umm { color: var(--umm); }
-      .purpleBrown-light { color: var(--purpleBrown-light); }
 
       .fw200 { font-weight: 200; }
 
@@ -66,6 +72,7 @@
         --umm: #6698C8;
         --purpleBrown: #4D394B;
         --purpleBrown-light: hsla(306,15%,26%,.4);
+        --purpleBrown-dark: hsl(306,15%,20%);
         --darken-1: rgba(0,0,0,.0625);
         --darken-2: rgba(0,0,0,.125);
         --darken-3: rgba(0,0,0,.25);
@@ -82,8 +89,18 @@
         border-bottom-right-radius: 3px;
       }
 
-      .selected-menu-item {
-        background-color: var(--yellow);
-        color: var(--purpleBrown);
+      .cursor-default { cursor: default; }
+
+      .sub-menu-item {
+        display: block;
+        font-size: 1.25rem;
+        line-height: 1.25;
+        font-weight: 200;
+        color: var(--grey);
+      }
+      .sub-menu-item:hover,
+      .sub-menu-item.selected {
+        color: white;
+        border-bottom: 3px solid var(--yellow);
       }
     </style>
