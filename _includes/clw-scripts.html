@@ -4,22 +4,22 @@
   if (typeof module === 'object') {window.module = module; module = undefined;}
 </script>
 
-<script src="js/jquery-1.12.4.js"></script>
-<script src="js/jquery-ui@1.12.1.js"></script>
-<script src="js/jquery.timepicker.min.js"></script>
-<script src="js/vue.js"></script>
+<script src="/js/jquery-1.12.4.js"></script>
+<script src="/js/jquery-ui@1.12.1.js"></script>
+<script src="/js/jquery.timepicker.min.js"></script>
+<script src="/js/vue.js"></script>
 
 <script>
   var clw = new Vue({
     el: '#clw',
     data: {
       title: '',
-      shortDesc: '',
       longDesc: '',
       date: '',
       time: '',
       location: '',
-      url: ''
+      url: '',
+      contactName: ''
     },
     mounted() {
       var vm = this

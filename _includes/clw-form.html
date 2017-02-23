@@ -8,9 +8,7 @@
           <form action="">
             <label for="title">Title</label>
             <input v-model="title" name="title" class="block col-12 mb1 field" type="text">
-            <label for="shortDesc">Short Description</label>
-            <input v-model="shortDesc" name="shortDesc" class="block col-12 mb1 field" type="text">
-            <label for="longDesc">Long Description</label>
+            <label for="longDesc">Long Feature Description</label>
             <textarea v-model="longDesc" ea name="longDesc" class="block col-12 mb1 field" rows="3" cols="80"></textarea>
             <!-- NOTE date and time inputs below set as type="text" hack to get around Chrome's
                   native date and time picker behaviors.
@@ -26,9 +24,11 @@
             <label for="url">URL</label>
             <input v-model="url" name="url" class="block col-12 mb1 field" type="url">
             <label for="image">Select an Image</label>
-            <div class="border py1 pl-third bg-white overflow-scroll">
+            <div class="border mb1 py1 pl-third bg-white overflow-scroll">
               <input class="italic quoted" type="file" accept="image/*" name="image" onchange="previewFile()">
             </div>
+            <label for="contactName">Contact Name</label>
+            <input v-model="contactName" name="contactName" class="block col-12 field" type="text">
           </form>
         </div>
       </section>
@@ -42,7 +42,8 @@
       Location:
       URL: 275x210
       Photo (Event flyers will not be used as photos):
-      Your name:
+      Contact name:
+      Contact email
 
     current fields:
       Title
