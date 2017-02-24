@@ -20,6 +20,6 @@ The expected deliverables for this project include:
 #### About the desktop app
 The app is built with HTML, CSS, and JavaScript using [Electron](http://electron.atom.io). See `package.json` and `index.js` for more details.
 
-[Vue.js](https://vuejs.org) is used for the preview UI.
-
 At this point I'm using [Jekyll](https://jekyllrb.com) to build the site and [electron-packager](https://www.npmjs.com/package/electron-packager) to build the binaries.
+
+[Vue.js](https://vuejs.org) is used for the preview UI.
