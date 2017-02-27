@@ -14,7 +14,7 @@
   },
   "author": "bzelip",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "electron": "^1.4.12",
     "electron-packager": "^8.5.2"
   }
