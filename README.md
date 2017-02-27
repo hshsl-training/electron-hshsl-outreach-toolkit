@@ -10,19 +10,18 @@ Provide an easy-to-install desktop app for HSHSL communications staff to optimiz
 #### Development details
 The app is built with HTML, CSS, and JavaScript using [Electron](http://electron.atom.io). See `package.json` for app requirements and build scripts, and `index.js` for app configuration.
 
-Currently,
+##### Curren development environment:
 
-- This is a [Jekyll](https://jekyllrb.com) site which compiles static html files to `_site/`. (`_site/` is not available as a directory to browse here in GitHub because it is ignored via `.gitignore`.)
+- This is a [Jekyll](https://jekyllrb.com) site which compiles static html files to `_site/`. (`_site/` is not available as a directory to browse here in GitHub because it is ignored via [`.gitignore`](https://github.com/hshsl-training/electron-hshsl-outreach-toolkit/blob/master/.gitignore).)
 - [Electron](https://electron.atom.io) watches `_site/` to build a local desktop app for development.
 - [electron-packager](https://www.npmjs.com/package/electron-packager) builds app binaries for distribution.
 - [Vue.js](https://vuejs.org) is used for the preview user interface.
 
 
-##### Environment:
+##### Environment dependencies:
 
-Jekyll is a [Ruby](https://www.ruby-lang.org/en/) gem.
-
-Everything Electron related is a [Node.js](https://nodejs.org) module.
+- Jekyll is a [Ruby](https://www.ruby-lang.org/en/) gem.
+- Everything Electron related is a [Node.js](https://nodejs.org) module.
 
 ##### Development set up:
 
