@@ -20,16 +20,18 @@ Currently,
 
 ##### Environment:
 
-Jekyll is a Ruby gem.
+Jekyll is a [Ruby](https://www.ruby-lang.org/en/) gem.
 
-Everything Electron related is a Node.js module.
+Everything Electron related is a [Node.js](https://nodejs.org) module.
 
 ##### Development set up:
 
+First build the static site with jekyll:
 ``` bash
 > jekyll build --watch
 ```
 
+Then, in a new terminal tab, start electron:
 ``` bash
 > npm start
 ```
