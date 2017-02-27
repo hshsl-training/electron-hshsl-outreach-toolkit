@@ -10,7 +10,7 @@ function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
     icon: __dirname + '/images/hshsl.png',
-  })
+  })//icon only works 1) on windows, 2) as a dock icon when app is open, general app icon remains electron
 
   // open app in full size, http://electron.atom.io/docs/api/browser-window/#winmaximize
   win.maximize()
