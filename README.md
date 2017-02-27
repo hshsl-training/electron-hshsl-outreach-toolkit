@@ -12,7 +12,7 @@ The app is built with HTML, CSS, and JavaScript using [Electron](http://electron
 
 Currently,
 
-- This is a [Jekyll](https://jekyllrb.com) site which compiles static html files to `_site/`.
+- This is a [Jekyll](https://jekyllrb.com) site which compiles static html files to `_site/`. (`_site/` is not available as a directory to browse here in GitHub because it is ignored via `.gitignore`.)
 - [Electron](https://electron.atom.io) watches `_site/` to build a local desktop app for development.
 - [electron-packager](https://www.npmjs.com/package/electron-packager) builds app binaries for distribution.
 - [Vue.js](https://vuejs.org) is used for the preview user interface.
