@@ -39,17 +39,26 @@ Then, in a new terminal tab, start electron:
 ```
 
 ##### Build binaries:
+Using [`electron-packager`](https://www.npmjs.com/package/electron-packager#from-the-command-line) to package this web app into OS-specific bundles (`.exe` and `.app`) takes the following form:
+
+```bash
+> electron-packager <sourcedir> <appname> --platform=<platform> --arch=<arch> [optional flags...]
+```
+
+**Note:** Building for Windows from non-Windows platforms [requires Wine](https://www.npmjs.com/package/electron-packager#building-windows-apps-from-non-windows-platforms).🍷
+
+When ready to build binary app bundles for distribution:
 ```bash
 # build for all platforms
 > electron-packager . --all
 
-# build Windows
+# build for Windows
 > electron-packager . --platform=win32
 
-# build Mac
+# build for Mac
 > electron-packager . --platform=darwin
 
-# build Win and Mac
+# build for Win and Mac
 > electron-packager . --platform='win32,darwin'
 
 # build with overwrite
