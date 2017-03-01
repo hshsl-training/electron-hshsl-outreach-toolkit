@@ -25,7 +25,9 @@ The app is built with HTML, CSS, and JavaScript using [Electron](http://electron
 
 ##### Development set up:
 
-First build the static site with jekyll:
+First clone, then navigate into this directory.
+
+Then build the static site with jekyll:
 ``` bash
 > jekyll build --watch
 ```
