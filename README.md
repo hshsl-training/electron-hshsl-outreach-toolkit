@@ -1,14 +1,12 @@
 # HSHSL Outreach Toolkit
 
-
 #### About
 This is a desktop app (for Windows and Mac) that lets communications staff:
 - Preview submissions to The Elm and Campus Life Weekly before submitting
 - Quickly get campus digital display templates and information
 
 
-Download for Windows
-Download for Mac
+Download for Windows | Download for Mac
 
 ---
 
@@ -17,16 +15,21 @@ The app is built with HTML, CSS, and JavaScript using [Electron](http://electron
 
 ##### Current development workflow:
 1. This is a [Jekyll](https://jekyllrb.com) site which compiles static html files to `_site/`. (`_site/` is not available as a directory to browse here in GitHub because it is ignored via [`.gitignore`](https://github.com/hshsl-training/electron-hshsl-outreach-toolkit/blob/master/.gitignore).)
-2. [Vue.js](https://vuejs.org) is used for the preview user interface.
-3. [Electron](https://electron.atom.io) watches `_site/` to build a local desktop app for development.
-4. [electron-packager](https://www.npmjs.com/package/electron-packager) builds app binaries for distribution.
+  a. [Vue.js](https://vuejs.org) is used for the preview user interface.
+2. [Electron](https://electron.atom.io) watches `_site/` to build a local desktop app for development.
+3. [electron-packager](https://www.npmjs.com/package/electron-packager) builds app binaries for distribution.
 
 ##### Environment dependencies:
 - Jekyll is a [Ruby](https://www.ruby-lang.org/en/) gem.
 - Everything Electron related is a [Node.js](https://nodejs.org) module.
 
 ##### Development set up:
-First clone, then navigate into this directory.
+First clone, then navigate into, this directory.
+
+Next, install the js dependencies:
+```bash
+> npm install
+```
 
 Then build the static site with jekyll:
 ``` bash
