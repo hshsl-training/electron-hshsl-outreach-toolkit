@@ -14,8 +14,7 @@ Download for Windows | Download for Mac
 The app is built with HTML, CSS, and JavaScript using [Electron](http://electron.atom.io). See `package.json` for app dependencies and build scripts, and `index.js` for app configuration.
 
 ##### Current development workflow:
-1. This is a [Jekyll](https://jekyllrb.com) site which compiles static html files to `_site/`. (`_site/` is not available as a directory to browse here in GitHub because it is ignored via [`.gitignore`](https://github.com/hshsl-training/electron-hshsl-outreach-toolkit/blob/master/.gitignore).)
-  a. [Vue.js](https://vuejs.org) is used for the preview user interface.
+1. This is a [Jekyll](https://jekyllrb.com) site which compiles static html files to `_site/`. (`_site/` is not available in the GitHub repo because of [`.gitignore`](https://github.com/hshsl-training/electron-hshsl-outreach-toolkit/blob/master/.gitignore). You will see it locally once you build the site for the first time.) [Vue.js](https://vuejs.org) is used for the preview user interface.
 2. [Electron](https://electron.atom.io) watches `_site/` to build a local desktop app for development.
 3. [electron-packager](https://www.npmjs.com/package/electron-packager) builds app binaries for distribution.
 
