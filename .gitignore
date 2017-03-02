@@ -1,4 +1,5 @@
 .DS_Store
-**/node_modules/
+node_modules/
+0.3.0/node_modules/
 _site/
 HSHSL Outreach Toolkit-*
