@@ -1,16 +1,16 @@
 # HSHSL Outreach Toolkit
 
 #### Version 0.3.0 - React app
-
 So far the main resources have been:
-- create-react-app cli output and docs
-- jsx docs
-- language-babel atom package
+- create-react-app cli output and [docs](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-assets-outside-of-the-module-system)
+- [jsx docs](https://facebook.github.io/react/docs/introducing-jsx.html)
+- [language-babel atom package](https://atom.io/packages/language-babel)
 - emmet and jsx discussion threads
+  - [first addition to atom `keymap` file](https://gist.github.com/mxstbr/361ddb22057f0a01762240be209321f0)
+  - [second edition from comment in above thread](https://gist.github.com/mxstbr/361ddb22057f0a01762240be209321f0#gistcomment-1959966)
 - [Free Code Camp blog post on React and Electron](https://medium.freecodecamp.com/building-an-electron-application-with-create-react-app-97945861647c#.446im0v5x)
   - [subsequent electron app starter file](https://github.com/electron/electron-quick-start/blob/master/main.js) - which is `reactron.js` here in this repo.
-- 
-
+- [React Router docs](https://github.com/ReactTraining/react-router/blob/master/docs/Introduction.md)
 
 #### About
 This is a desktop app (for Windows and Mac) that lets communications staff:
