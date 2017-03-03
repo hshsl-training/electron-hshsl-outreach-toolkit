@@ -3,7 +3,7 @@
   "productName": "HSHSL Outreach Toolkit",
   "version": "0.3.0",
   "description": "Communication resources",
-  "main": "index.js",
+  "main": "reactron.js",
   "scripts": {
     "electron-dev": "./node_modules/.bin/electron .",
     "react-dev": "react-scripts start",

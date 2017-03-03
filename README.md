@@ -1,5 +1,17 @@
 # HSHSL Outreach Toolkit
 
+#### Version 0.3.0 - React app
+
+So far the main resources have been:
+- create-react-app cli output and docs
+- jsx docs
+- language-babel atom package
+- emmet and jsx discussion threads
+- [Free Code Camp blog post on React and Electron](https://medium.freecodecamp.com/building-an-electron-application-with-create-react-app-97945861647c#.446im0v5x)
+  - [subsequent electron app starter file](https://github.com/electron/electron-quick-start/blob/master/main.js) - which is `reactron.js` here in this repo.
+- 
+
+
 #### About
 This is a desktop app (for Windows and Mac) that lets communications staff:
 - Preview submissions to The Elm and Campus Life Weekly before submitting
