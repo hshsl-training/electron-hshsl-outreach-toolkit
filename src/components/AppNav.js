@@ -3,7 +3,7 @@ import '../css/basscss@7.1.1.min.css';
 import '../css/hot.css';
 
 
-const HomeNav = () => {
+const AppNav = () => {
   return (
     <section className="vh100 col col-3 bg-purpleBrown flex flex-column justify-space-between">
       <div>
@@ -35,4 +35,4 @@ const HomeNav = () => {
   );
 };
 
-export default HomeNav;
+export default AppNav;
