@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import Clw from './components/Clw';
 
 ReactDOM.render(
-  <App />,
+  <Clw />,
   document.getElementById('root')
 );

@@ -13,7 +13,7 @@ class ElmNav extends Component {
           <p className="grey">Enter your content below to preview what it will look like throughout the Elm.</p>
         </div>
         <div className="clearfix grey">
-          <form action="">
+          <form>
             <label for="title">Title</label>
             <input v-model="title" name="title" className="block col-12 mb1 field" type="text"/>
             <label for="shortDesc">Short Description</label>
@@ -30,7 +30,7 @@ class ElmNav extends Component {
             <input v-model="url" name="url" className="block col-12 mb1 field" type="url"/>
             <label for="image">Select an Image</label>
             <div className="border py1 pl-third bg-white overflow-scroll">
-              <input className="italic quoted" type="file" accept="image/*" name="image" onchange="previewFile()"/>
+              <input className="italic quoted" type="file" accept="image/*" name="image" onChange="previewFile()"/>
             </div>
           </form>
         </div>

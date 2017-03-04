@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/basscss@7.1.1.min.css'
 import '../css/hot.css'
-
+import twelveByNine from '../img/1200x900.png';
 
 class ElmWorkspace extends Component {
   render() {
@@ -11,14 +11,14 @@ class ElmWorkspace extends Component {
           <h1 className="mb3 h4 center">Elm Home Page Feature</h1>
           <div className="container">
             <div className="flex justify-content-center">
-              <div className="col-4 px2" style="max-width: 350px;">
+              <div className="col-4 px2 maxw-350px">
                 <div className="bg-white rounded">
                   <div>
-                    <img src="images/1200x900.png" className="rounded-top img-insert" style="max-width: 100%;"/>
+                    <img src={ twelveByNine } className="rounded-top img-insert maxw-100per"/>
                   </div>
                   <div className="p2">
-                    <p className="h3">{{ "{{ title "}} }}</p>
-                    <p>{{ "{{ shortDesc "}} }}</p>
+                    <p className="h3">title</p>
+                    <p>shortDesc</p>
                   </div>
                 </div>
               </div>
@@ -31,11 +31,11 @@ class ElmWorkspace extends Component {
             <div className="p3">
               <div className="bg-white rounded">
                 <div>
-                  <img src="images/1200x900.png" className="rounded-top img-insert"/>
+                  <img src={ twelveByNine } className="rounded-top img-insert"/>
                 </div>
                 <div className="p2">
-                  <p className="h3">{{ "{{ title "}} }}</p>
-                  <p>{{ "{{ longDesc "}} }}</p>
+                  <p className="h3">title</p>
+                  <p>longDesc</p>
                 </div>
               </div>
             </div>
@@ -44,18 +44,18 @@ class ElmWorkspace extends Component {
         <section className="vh100 border-box border-bottom pb3">
           <h1 className="mb3 h4 center">Elm Weekly Email</h1>
           <div className="container bg-white">
-            <div className="p3 mx-auto" style="max-width: 700px;box-sizing: content-box;">
+            <div className="p3 mx-auto maxw-700px content-box">
               <p className="h3 p1 fw200 white bg-silver-blue caps">Health Sciences &amp; Human Services Library</p>
               <div className="flex">
                 <div className="col-6 pr1">
-                  <p className="bold mb0">{{ "{{ title "}} }}</p>
-                  <p className="bold mb0">{{ "{{ date "}} }}</p>
-                  <p className="bold mb0">{{ "{{ time "}} }}</p>
-                  <p className="bold">{{ "{{ location "}} }}</p>
-                  <p>{{ "{{ shortDesc "}} }}</p>
+                  <p className="bold mb0">title</p>
+                  <p className="bold mb0">date</p>
+                  <p className="bold mb0">time</p>
+                  <p className="bold">location</p>
+                  <p>shortDesc</p>
                 </div>
                 <div className="col-6">
-                  <img src="images/1200x900.png" style="max-width: 100%;" alt="" className="img-insert"/>
+                  <img src={ twelveByNine } alt="" className="img-insert maxw-100per"/>
                 </div>
               </div>
             </div>
@@ -66,16 +66,16 @@ class ElmWorkspace extends Component {
           <div className="container">
             <div className="p3">
               <p className="h3 green caps">Health Sciences &amp; Human Services Library</p>
-              <p className="h2 border-bottom">{{ "{{ title "}} }}</p>
-              <p className="bold mb0">{{ "{{ date "}} }}</p>
-              <p className="bold mb0">{{ "{{ time "}} }}</p>
-              <p className="bold mb0">{{ "{{ location "}} }}</p>
+              <p className="h2 border-bottom">title</p>
+              <p className="bold mb0">date</p>
+              <p className="bold mb0">time</p>
+              <p className="bold mb0">location</p>
               <div className="flex">
                 <div className="col-5 mt2">
-                  <img src="images/1200x900.png" alt="" className="img-insert" style="max-width: 375px;"/>
+                  <img src={ twelveByNine } alt="" className="img-insert maxw-375px"/>
                 </div>
                 <div className="col-7 p2">
-                  <p>{{ "{{ longDesc "}} }}</p>
+                  <p>longDesc</p>
                 </div>
               </div>
             </div>

@@ -173,3 +173,14 @@ a.short-contact {
   color: white;
   border-bottom: 3px solid var(--yellow);
 }
+
+/*
+  Styles written for v0.3.0 react app
+*/
+
+.maxw-350px { max-width: 350px; }
+.maxw-375px { max-width: 375px; }
+.maxw-700px { max-width: 700px; }
+.maxw-100per { max-width: 100%; }
+.h-100per { height: 100%; }
+.bg-offwhite { background-color:#F0F1F1; }
