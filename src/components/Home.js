@@ -3,15 +3,13 @@ import HomeNav from './HomeNav';
 import HomeWorkspace from './HomeWorkspace';
 
 
-class Home extends Component {
-  render() {
-    return (
-      <main>
-        <HomeNav />
-        <HomeWorkspace />
-      </main>
-    );
-  }
-}
+const Home = () => {
+  return (
+    <main>
+      <HomeNav />
+      <HomeWorkspace />
+    </main>
+  );
+};
 
 export default Home;
